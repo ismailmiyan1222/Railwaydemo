@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="demo" src="https://i.pinimg.com/1200x/b5/ca/fa/b5cafa50e747722d29f528d41c74819e.jpg" style="width:99.5%;height: 95vh; border: 2px solid black;">
+
+<script>
+setInterval(function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    //document.getElementById("demo").innerHTML = this.responseText;
+    document.getElementById('demo').src = 'https://source.unsplash.com/user/erondu';
+  }
+  xhttp.open("GET", "https://source.unsplash.com/user/erondu");
+  xhttp.send();
+}, 2000);
+</script>
+ 
+</body>
+</html>
